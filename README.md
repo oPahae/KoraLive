@@ -1,45 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ⚽🏆 KoraLive - Suivez vos matchs en direct ! 🏟️📺
 
-## Getting Started
+Bienvenue sur **KoraLive**, votre plateforme en ligne pour **suivre les scores en direct** et **regarder vos matchs préférés en streaming**. Notre site web est conçu pour les fans de sport qui veulent rester connectés avec l'action à tout moment !  
 
-First, run the development server:
+**Siteweb** : https://koralive.vercel.app
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Fonctionnalités Principales
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 🔹 Scores en Direct
+- Affichage des scores en temps réel pour tous les matchs majeurs ⚡
+- Informations détaillées : équipes, logo, score, minute actuelle ⏱️
+- Classement et statistiques des équipes  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🔹 Streaming des Matchs
+- Regarder les matchs en direct directement depuis le site 📺
+- Choix de différents serveurs pour un streaming fluide 🌐
+- Interface intuitive et responsive pour tous les appareils 📱💻  
 
-## Learn More
+### 🔹 Historique et Résultats
+- Consulter les résultats des matchs passés 📝
+- Revoir les highlights et moments clés ⚡  
 
-To learn more about Next.js, take a look at the following resources:
+### 🔹 Notifications & Alertes
+- Recevez des notifications pour vos matchs favoris 🔔
+- Suivi des scores en temps réel sans rafraîchir la page ⏱️  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🖌️ Design et Technologie
 
-## Deploy on Vercel
+### 🎨 UI/UX
+- Interface moderne, fluide et responsive 🌈
+- Thème dynamique inspiré des stades et des équipes de foot ⚽
+- Animations et transitions stylées pour une expérience immersive ✨
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 💻 Stack Technique
+- **Frontend** : Next.js, Tailwind CSS pour un design rapide et moderne 🖥️
+- **Backend** : API Next.js + Puppeteer pour scraper les scores et vidéos en direct ⚡
+- **Base de données** : MySQL ou PostgreSQL pour stocker les utilisateurs et les favoris 🗄️
+- **Librairies & Outils** :
+  - `lucide-react` pour les icônes 🖼️
+  - `GSAP` pour les animations ⚡
+  - `react-player` pour le streaming des vidéos 🎬  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-"# BBQ" 
-"# BBQ" 
-"# BBQ" 
-"# BBQ" 
-"# Barbeque" 
-"# barbeque-party" 
-"# EconoTSA7IP" 
-"# Econo" 
-"# Econo-Tsa7ip" 
+---
+
+## 📂 Structure du Projet
+
+```text
+KoraLive/
+├─ pages/
+│  ├─ index.jsx         # Page d'accueil avec liste des matchs
+│  ├─ match.jsx         # Page pour regarder un match spécifique
+│  ├─ api/
+│  │  ├─ home.js        # API pour récupérer les scores et les horaires des matches
+│  │  ├─ match.js       # API pour récupérer le streaming du match
+├─ public/
+│  ├─ images/           # Logos et images des équipes
+├─ styles/
+│  ├─ globals.css       # Styles globaux
+├─ package.json
+├─ README.md
